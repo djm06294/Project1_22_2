@@ -13,6 +13,22 @@ public class WordCRUD implements ICRUD{
         this.s = s;
     }
 
+    public void addWord() {
+        Word one = (Word)add();
+        //id 설정 (나)
+        list.add(one);
+        System.out.println("새 단어가 단어장에 추가되었습니다. ");
+    }
+
+    public void listAll() {
+        System.out.println("-------------------------");
+        for(int i=0; i<list.size(); i++) {
+            System.out.print((i+1) + " ");
+            System.out.println(list.get(i).toString());
+        }
+        System.out.println("-------------------------");
+    }
+
     @Override
     public Object add() {
         System.out.print("=> 난의도(1,2,3) & 새 단어 입력 : ");
@@ -24,12 +40,6 @@ public class WordCRUD implements ICRUD{
 
 
         return new Word(0, level, word, meaning);
-    }
-
-    public void addWord() {
-        Word one = (Word)add();
-        list.add(one);
-        System.out.println("새 단어가 단어장에 추가되었습니다. ");
     }
 
     @Override
@@ -49,15 +59,4 @@ public class WordCRUD implements ICRUD{
         // TODO Auto-generated method stub
 
     }
-
-    public void listAll() {
-        System.out.println("-------------------------");
-        for(int i=0; i<list.size(); i++) {
-            System.out.print((i+1) + " ");
-            System.out.println(list.get(i).toString());
-        }
-        System.out.println("-------------------------");
-    }
-
-
 }
