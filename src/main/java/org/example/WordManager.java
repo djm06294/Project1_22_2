@@ -25,7 +25,7 @@ public class WordManager {
             }
             else if(menu == 5) {  //update
                 //change
-                wordCRUD.updateItem();
+                wordCRUD.updateWord();
             }
             else if(menu == 6) {  //delete
                 wordCRUD.deleteWord();
