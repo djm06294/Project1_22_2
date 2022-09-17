@@ -1,32 +1,32 @@
 # Project1_Final_22_2
 
 ### 1. [2. 수준별단어보기] 메뉴 선택 시 실행결과
-<img src='https://github.com/djm06294/Project1_22_2/blob/master/screenshots/Project1_Fin_2-1.JPG?raw=true' width='500'>
-<img src='https://github.com/djm06294/Project1_22_2/blob/master/screenshots/Project1_Fin_2-2.JPG?raw=true' width='500'>
+<img src='https://github.com/djm06294/Project1_22_2/blob/master/screenshots/Project1_Fin_2-1.JPG?raw=true' width='300'>
+<img src='https://github.com/djm06294/Project1_22_2/blob/master/screenshots/Project1_Fin_2-2.JPG?raw=true' width='300'>
 
 #
 ### 2. [3. 단어검색] 메뉴 선택 시 실행결과
-<img src='https://github.com/djm06294/Project1_22_2/blob/master/screenshots/Project1_Fin_3.JPG?raw=true' width='500'>
+<img src='https://github.com/djm06294/Project1_22_2/blob/master/screenshots/Project1_Fin_3.JPG?raw=true' width='300'>
 
 #
 ### 3. [5. 단어수정] 메뉴 선택 시 실행결과
-<img src='https://github.com/djm06294/Project1_22_2/blob/master/screenshots/Project1_Fin_5.JPG?raw=true' width='500'>
+<img src='https://github.com/djm06294/Project1_22_2/blob/master/screenshots/Project1_Fin_5.JPG?raw=true' width='300'>
 
 #
 ### 4. [6. 단어삭제] 메뉴 선택 시 실행결과
-<img src='https://github.com/djm06294/Project1_22_2/blob/master/screenshots/Project1_Fin_6-1.JPG?raw=true' width='500'>
-<img src='https://github.com/djm06294/Project1_22_2/blob/master/screenshots/Project1_Fin_6-2.JPG?raw=true' width='500'>
+<img src='https://github.com/djm06294/Project1_22_2/blob/master/screenshots/Project1_Fin_6-1.JPG?raw=true' width='300'>
+<img src='https://github.com/djm06294/Project1_22_2/blob/master/screenshots/Project1_Fin_6-2.JPG?raw=true' width='300'>
 
 #
-### 5. [7. 파일저장] 메뉴 선택 시 실행결과 (txt 파일 내용 포함)
-<img src='https://github.com/djm06294/Project1_22_2/blob/master/screenshots/Project1_Fin_7-1(txt).JPG?raw=true' width='500'>
-<img src='https://github.com/djm06294/Project1_22_2/blob/master/screenshots/Project1_Fin_7-2.JPG?raw=true' width='500'>
-<img src='https://github.com/djm06294/Project1_22_2/blob/master/screenshots/Project1_Fin_7-3.JPG?raw=true' width='500'>
-<img src='https://github.com/djm06294/Project1_22_2/blob/master/screenshots/Project1_Fin_7-4(txt).JPG?raw=true' width='500'>
+### 5. [7. 파일저장] 메뉴 선택 시 실행결과 (실행 전후 txt 파일 내용 포함)
+<img src='https://github.com/djm06294/Project1_22_2/blob/master/screenshots/Project1_Fin_7-1(txt).JPG?raw=true' width='300'>
+<img src='https://github.com/djm06294/Project1_22_2/blob/master/screenshots/Project1_Fin_7-2.JPG?raw=true' width='300'>
+<img src='https://github.com/djm06294/Project1_22_2/blob/master/screenshots/Project1_Fin_7-3.JPG?raw=true' width='300'>
+<img src='https://github.com/djm06294/Project1_22_2/blob/master/screenshots/Project1_Fin_7-4(txt).JPG?raw=true' width='300'>
 
 #
 ### 6. 프로그램 새로 실행 시 모든 단어 가져오는지 확인
-<img src='https://github.com/djm06294/Project1_22_2/blob/master/screenshots/Project1_Fin_load.JPG?raw=true' width='500'>
+<img src='https://github.com/djm06294/Project1_22_2/blob/master/screenshots/Project1_Fin_load.JPG?raw=true' width='300'>
 
 #
 ### 7. 프로젝트 구현 소감, 어려움, 건의사항
