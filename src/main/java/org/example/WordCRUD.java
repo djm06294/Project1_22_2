@@ -59,6 +59,19 @@ public class WordCRUD implements ICRUD{
         }
         System.out.println("-------------------------");
     }
+
+    public void listAll2 (String keyword) {
+        int j = 0;
+        System.out.println("-------------------------");
+        for(int i=0; i<list.size(); i++) {
+            String word = list.get(i).getWord();
+            if (!word.startsWith(keyword)) continue;
+            System.out.print((j + 1) + " ");
+            System.out.println(list.get(i).toString());
+            j++;
+        }
+        System.out.println("-------------------------");
+    }
     
     public void updateWord() {
         System.out.print("=> 수정할 단어 검색 : ");
@@ -138,7 +151,7 @@ public class WordCRUD implements ICRUD{
     public void searchWord() {
         System.out.print("=> 원하는 단어는? " );
         String keyword = s.next();
-        listAll(keyword);
+        listAll2(keyword);
     }
 
     @Override
