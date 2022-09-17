@@ -127,14 +127,18 @@ public class WordCRUD implements ICRUD{
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-
     }
 
     public void searchLevel() {
         System.out.print("=> 원하는 레벨은? (1~3) ");
         int level = s.nextInt();
         listAll(level);
+    }
+
+    public void searchWord() {
+        System.out.print("=> 원하는 단어는? " );
+        String keyword = s.next();
+        listAll(keyword);
     }
 
     @Override
@@ -146,25 +150,21 @@ public class WordCRUD implements ICRUD{
         System.out.print("뜻 입력 : ");
         String meaning = s.nextLine();
 
-
         return new Word(0, level, word, meaning);
     }
 
     @Override
     public int update(Object obj) {
-        // TODO Auto-generated method stub
         return 0;
     }
 
     @Override
     public int delete(Object obj) {
-        // TODO Auto-generated method stub
         return 0;
     }
 
     @Override
     public void selectOne(int id) {
-        // TODO Auto-generated method stub
-    }
 
+    }
 }
