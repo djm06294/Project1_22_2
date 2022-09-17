@@ -12,6 +12,7 @@ public class WordManager {
     }
 
     public void start() {
+        wordCRUD.loadFile();
         while(true) {
             int menu = selectMenu();
             if(menu == 0) break;
@@ -31,7 +32,7 @@ public class WordManager {
                 wordCRUD.deleteWord();
             }
             else if(menu == 7) {
-                wordCRUD.save();
+                wordCRUD.saveFile();
             }
         }
         System.out.println("프로그램 종료! 다음에 만나요 ㅎ..");

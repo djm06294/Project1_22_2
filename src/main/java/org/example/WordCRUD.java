@@ -1,11 +1,13 @@
 package org.example;
 
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class WordCRUD implements ICRUD{
     ArrayList<Word> list;
     Scanner s;
+    final String fname = "Dictionary.txt";
 
     //생성자
     WordCRUD(Scanner s) {
@@ -76,11 +78,45 @@ public class WordCRUD implements ICRUD{
         }
     }
 
-    public void save() {
-        //저장해주기
-        System.out.println("모든 단어 파일 저장 완료!");
+    public void loadFile() {
+        try {
+            BufferedReader br = new BufferedReader(new FileReader(fname));
+            String line;
+            int count = 0;
+
+            while(true) {
+                line = br.readLine();
+                if (line == null) break;
+                String data[] = line.split("\\|");
+                int level = Integer.parseInt(data[0]);
+                String word = data[1];
+                String meaning = data[2];
+                list.add(new Word(0, level, word, meaning));
+                count++;
+            }
+
+            br.close();
+            System.out.println("==> " + count + "개 로딩 완료!!");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
+    public void saveFile() {
+        //저장해주기
+        try {
+            PrintWriter pr = new PrintWriter(new FileWriter(fname));
+            for(Word one : list) {
+                pr.write(one.toFileString() + "\n");
+            }
+            pr.close();
+            System.out.println("모든 단어 파일 저장 완료!");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+    }
 
     @Override
     public Object add() {
@@ -111,7 +147,5 @@ public class WordCRUD implements ICRUD{
     public void selectOne(int id) {
         // TODO Auto-generated method stub
     }
-
-
 
 }
